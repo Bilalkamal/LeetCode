@@ -5,8 +5,7 @@ class Solution:
             negative = True 
         if negative:
             x = str(x)[1:]
-        x = str(x)[::-1]
-        x = int(x)
+        x = int(str(x)[::-1])
         if -2**31 >x or x>(2**31) -1:
             return 0
         return x*-1 if negative else x
