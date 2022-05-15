@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        print(s)
+
         stack = []
         pars = {"(":")", "{":"}", "[":"]"}
         for p in s:
